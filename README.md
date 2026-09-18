@@ -9,7 +9,9 @@ npm install
 cp .env.example .env.local
 ```
 
-Configure Supabase (run `supabase/migrations/001_leads.sql`) and Resend. See [docs/DEPLOY.md](docs/DEPLOY.md).
+Configure Supabase and Vercel env. **Start here:** [docs/PANDUAN-SUPABASE-VERCEL.md](docs/PANDUAN-SUPABASE-VERCEL.md).
+
+**Live preview:** [https://fikzdev-web.vercel.app](https://fikzdev-web.vercel.app) (Vercel project `fikzdev-web`).
 
 ## Scripts
 
