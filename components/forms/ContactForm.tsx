@@ -53,7 +53,7 @@ export function ContactForm({ sourcePath }: { sourcePath?: string }) {
           type="text"
           required
           autoComplete="name"
-          className="w-full rounded-md border border-slate-300 bg-white px-3 py-2.5 text-ink"
+          className="w-full rounded-md border border-border bg-surface px-3 py-2.5 text-ink"
           aria-describedby={fieldError(state, "name") ? "name-error" : undefined}
         />
         <FieldError id="name-error" message={fieldError(state, "name")} />
@@ -69,7 +69,7 @@ export function ContactForm({ sourcePath }: { sourcePath?: string }) {
           type="email"
           required
           autoComplete="email"
-          className="w-full rounded-md border border-slate-300 bg-white px-3 py-2.5"
+          className="w-full rounded-md border border-border bg-surface px-3 py-2.5"
           aria-describedby={
             fieldError(state, "email") ? "email-error" : undefined
           }
@@ -86,7 +86,7 @@ export function ContactForm({ sourcePath }: { sourcePath?: string }) {
           name="phone"
           type="tel"
           autoComplete="tel"
-          className="w-full rounded-md border border-slate-300 bg-white px-3 py-2.5"
+          className="w-full rounded-md border border-border bg-surface px-3 py-2.5"
         />
       </div>
 
@@ -99,7 +99,7 @@ export function ContactForm({ sourcePath }: { sourcePath?: string }) {
           name="service"
           required
           defaultValue=""
-          className="w-full rounded-md border border-slate-300 bg-white px-3 py-2.5"
+          className="w-full rounded-md border border-border bg-surface px-3 py-2.5"
           aria-describedby={
             fieldError(state, "service") ? "service-error" : undefined
           }
@@ -125,7 +125,7 @@ export function ContactForm({ sourcePath }: { sourcePath?: string }) {
           name="message"
           required
           rows={5}
-          className="w-full rounded-md border border-slate-300 bg-white px-3 py-2.5"
+          className="w-full rounded-md border border-border bg-surface px-3 py-2.5"
           aria-describedby={
             fieldError(state, "message") ? "message-error" : undefined
           }
@@ -140,7 +140,7 @@ export function ContactForm({ sourcePath }: { sourcePath?: string }) {
           type="checkbox"
           value="true"
           required
-          className="mt-1 h-4 w-4 rounded border-slate-300"
+          className="mt-1 h-4 w-4 rounded border-border"
           aria-describedby={
             fieldError(state, "consent") ? "consent-error" : undefined
           }
@@ -198,7 +198,7 @@ export function ContactForm({ sourcePath }: { sourcePath?: string }) {
       <button
         type="submit"
         disabled={pending}
-        className="inline-flex min-h-11 items-center justify-center rounded-md bg-accent px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-accent-hover disabled:opacity-60"
+        className="inline-flex min-h-11 items-center justify-center rounded-md bg-cta px-5 py-2.5 text-sm font-medium text-cta-foreground transition-colors hover:bg-cta-hover disabled:opacity-60"
       >
         {pending ? "Menghantar…" : "Hantar mesej"}
       </button>

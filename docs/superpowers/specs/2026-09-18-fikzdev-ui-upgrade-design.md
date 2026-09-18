@@ -1,7 +1,7 @@
 # FikzDev UI Upgrade — Editorial Premium (Design Spec)
 
 **Date:** 2026-09-18  
-**Status:** Draft for review  
+**Status:** Approved — Palette A implemented 2026-09-18  
 **Scope:** Homepage, Header, Footer, global tokens, `/hubungi` visual alignment  
 **Out of scope:** Phase 2 service copy, portfolio cases, dark mode, Framer Motion
 
@@ -131,5 +131,5 @@ app/globals.css        (tokens + grain utility)
 |----------|--------|
 | Aesthetic | Editorial premium |
 | Scope | Home + shell + hubungi styling |
-| Color | **Palette A** (pending user confirm B/C) |
+| Color | **Palette A** (confirmed) |
 | Motion | CSS only |

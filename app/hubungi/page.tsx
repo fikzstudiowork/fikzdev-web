@@ -15,7 +15,7 @@ export const metadata = pageMetadata({
 export default function HubungiPage() {
   const baseUrl = site.url.replace(/\/$/, "");
   return (
-    <Section>
+    <Section className="bg-surface">
       <Container className="max-w-xl">
         <JsonLd
           data={{
@@ -26,12 +26,14 @@ export default function HubungiPage() {
             inLanguage: "ms-MY",
           }}
         />
-        <h1 className="text-3xl font-semibold tracking-tight">Hubungi</h1>
-        <p className="mt-3 text-muted">
+        <h1 className="font-display text-3xl font-semibold tracking-tight sm:text-4xl">
+          Hubungi
+        </h1>
+        <p className="mt-3 leading-relaxed text-muted">
           Ceritakan ringkas tentang bisnes dan apa yang anda perlukan. Kami akan
           hubungi anda selepas semak mesej.
         </p>
-        <div className="mt-8">
+        <div className="mt-8 rounded-xl border border-border bg-surface-raised p-6 shadow-sm sm:p-8">
           <ContactForm sourcePath="/hubungi" />
         </div>
       </Container>

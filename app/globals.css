@@ -1,12 +1,19 @@
 @import "tailwindcss";
 
 @theme {
-  --color-surface: #fafafa;
-  --color-ink: #0f172a;
-  --color-muted: #64748b;
-  --color-accent: #0d9488;
-  --color-accent-hover: #0f766e;
-  --font-sans: ui-sans-serif, system-ui, sans-serif, "Segoe UI", sans-serif;
+  --color-surface: #f4f0e8;
+  --color-surface-raised: #fffcf7;
+  --color-ink: #12141a;
+  --color-muted: #5c6478;
+  --color-border: #d8d2c8;
+  --color-accent: #1b6b62;
+  --color-accent-hover: #14554e;
+  --color-cta: #12141a;
+  --color-cta-hover: #2a2e38;
+  --color-cta-foreground: #fffcf7;
+  --color-highlight: #c4a574;
+  --font-sans: var(--font-sans-app), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-display-app), ui-serif, Georgia, serif;
 }
 
 @layer base {
@@ -21,5 +28,53 @@
 
   :focus-visible {
     @apply outline-2 outline-offset-2 outline-accent;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .hero-grain {
+    position: relative;
+    isolation: isolate;
+  }
+
+  .hero-grain::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    opacity: 0.35;
+    pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.08'/%3E%3C/svg%3E");
+  }
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(14px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-up {
+    animation: fade-up 0.65s ease-out both;
+  }
+
+  .animate-delay-1 {
+    animation-delay: 0.12s;
+  }
+
+  .animate-delay-2 {
+    animation-delay: 0.22s;
+  }
+
+  .animate-delay-3 {
+    animation-delay: 0.32s;
   }
 }
