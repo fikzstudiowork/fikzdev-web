@@ -1,0 +1,10 @@
+---
+description: Public copy rules for FikzDev (BM Malaysia)
+globs: "**/*.{tsx,ts,mdx,md}"
+alwaysApply: false
+---
+
+- Use natural Malaysian Bahasa Melayu for user-facing strings.
+- No AI slop, hype, fake claims, or em dashes.
+- No guaranteed Google rankings.
+- See docs/COPYWRITING.md.

@@ -1,0 +1,9 @@
+---
+description: SEO rules for FikzDev
+globs: "**/*.{tsx,ts}"
+alwaysApply: false
+---
+
+- Unique title and description per page.
+- No keyword stuffing or mass location pages.
+- See docs/LOCAL-SEO.md and docs/COPYWRITING.md.
